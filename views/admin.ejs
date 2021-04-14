@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/css.css">
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title>WIND-TURBINE-EXPERIMENTAL-ANALYSIS</title>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <div class="col-12">
+                <h4>FOR MANUAL DATA INPUT PURPOSE</h4>
+            </div>
+        </div>
+    </div>
+    <form action="">
+        <div class="container mt-5">
+            <label for="Voltage">Voltage</label>
+            <div class="row">
+                <input class="textsize mr-4" placeholder="separate numbers eg. 0-0-0-0" type="text" name="Voltage" id="_Voltage">
+                <input class="btn btn-success borderradius mr" onclick="Admin_confirm(this.id)" id="btnVoltage" type="button" value="Confirm">
+                
+            </div>
+            <br><p id="vp"></p>
+            <label class="mt-4" for="Current">Current</label>
+            <div class="row">
+                <input class="textsize mr-4" placeholder="separate numbers eg. 0-0-0-0"type="text" name="Current" id="_Current">
+                <input class="btn btn-success borderradius" onclick="Admin_confirm(this.id)" id="btnCurrent" type="button" value="Confirm">
+            </div>
+            <br><p id="vc"></p>
+            <label class="mt-4" for="Wind-Speed">Wind-Speed</label>
+
+            <div class="row">
+                <input class="textsize mr-4" placeholder="separate numbers eg. 0-0-0-0" type="text" name="Wind-Speed" id="_Wind">
+                <input class="btn btn-success borderradius" onclick="Admin_confirm(this.id)" id="btnWind" type="button" value="Confirm">
+            </div>
+            <br><p id="vw"></p>
+            <label class="mt-4" for="Energy">Energy</label>
+            <div class="row">
+                <input class="textsize mr-4" placeholder="separate numbers eg. 0-0-0-0"type="text" name="Energy" id="_Energy">
+                <input class="btn btn-success borderradius" onclick="Admin_confirm(this.id)" id="btnEnergy" type="button" value="Confirm">
+            </div>
+            <br><p id="ve"></p>
+        </div>
+        <a href="/login" type="button" class="btn buttonradius"><i class="fa fa-home "> Go Home</i></a>
+    </form>
+</body>
+
+</html>
