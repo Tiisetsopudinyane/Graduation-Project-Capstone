@@ -51,8 +51,8 @@ function Admin_confirm(btnId) {
 }
     
 function PasswordMatch(btnr){
-    var password11=document.getElementById('password1').value;
-    var password22=document.getElementById("password2").value;
+    var password11=((document.getElementById('password1')||{}).value)||"";
+    var password22=((document.getElementById("password2")||{}).value)||"";
     switch (btnr){
         case "btnRegister":
             if(password11!=password22){
@@ -61,10 +61,7 @@ function PasswordMatch(btnr){
             else if (password11 =="" && password22==""){ 
                       return false;
             }
-            else if(password11==password22){
-                //TO DO
-                window.location="home.html";
-            }
+            
             break;
             case "btnCancel":
                 window.close();
@@ -72,14 +69,14 @@ function PasswordMatch(btnr){
     
 
 }
-function HomeButton(Hbtn){
+$(document).ready(function HomeButton(Hbtn){
     if(Hbtn=="LObutton"){
         //TO DO for logout button the system will logout
         window.location="login.html";
     }
-}
-function LoginButton(Lbtn){
+});
+$(document).ready(function LoginButton(Lbtn){
     if(Lbtn=="Login_cancel_btn"){
         window.close();
     }
-}
+});
